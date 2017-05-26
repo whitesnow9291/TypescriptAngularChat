@@ -1,0 +1,14 @@
+<section class="chat_box" id="chat_boxid">
+    <h1>Chat</h1>
+    <ul class="chat-list" id="autoscroll">
+        <chat-item ng-repeat="chatitem in $ctrl.chatlists" chatitem="chatitem"></chat-item>
+    </ul>
+<input
+  class="chat_input" id ="chat_input"
+  ng-model="$ctrl.chat_text"
+  ng-keypress="$ctrl.handleSubmit($event)"
+  ng-blur="$ctrl.handleBlur()"
+  placeholder="{{$ctrl.placeholder}}"
+  type="text"
+/>
+</section>

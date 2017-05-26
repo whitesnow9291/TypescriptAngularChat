@@ -5,9 +5,11 @@ class AppController {
   todos: Todo[];
   filter: string;
 
-  constructor() {
-    this.todos = [initialTodo];
-    this.filter = SHOW_ALL;
+  constructor($cookies,$state) {
+    if($cookies.getObject('authinfo')){
+      $state.go('chat');
+    }
+    
   }
 }
 

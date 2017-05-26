@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "angular": "^1.6.2",
+    "angular-cookies": "^1.6.4",
     "angular-ui-router": "1.0.0-beta.3",
+    "angularjs-scroll-glue": "^2.2.0",
     "todomvc-app-css": "^2.0.6"
   },
   "devDependencies": {

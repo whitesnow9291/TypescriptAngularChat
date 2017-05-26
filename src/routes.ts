@@ -9,5 +9,8 @@ function routesConfig($stateProvider: angular.ui.IStateProvider, $urlRouterProvi
     .state('app', {
       url: '/',
       component: 'app'
+    }).state('chat', {
+      url: '/',
+      component: 'chat'
     });
 }

@@ -1,0 +1,16 @@
+<login class="header">
+    <h1>Login</h1>
+    <div><input class="" ng-model="$ctrl.email" placeholder="Email" type="text" />
+    </div>
+    <div>
+        <input class="" ng-model="$ctrl.password" placeholder="Password" type="password" />
+    </div>
+    <div>
+        <error>{{$ctrl.errors}}</error>
+    </div>
+    <div>
+        <button ng-click="$ctrl.handleLogin()">
+            Login
+        </button>
+    </div>
+</login>
